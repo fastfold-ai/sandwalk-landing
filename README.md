@@ -28,9 +28,25 @@ pnpm start
 
 ## Deploy
 
-1. Push to GitHub (`fastfold-ai/sandwalk-landing`).
-2. Import the repo in Vercel.
-3. Attach production domain `sandwalk.sh` (redirect `www` → apex).
+- Repo: [fastfold-ai/sandwalk-landing](https://github.com/fastfold-ai/sandwalk-landing)
+- Vercel project: `fast-fold/sandwalk-landing`
+- Preview / prod alias: [https://sandwalk-landing.vercel.app](https://sandwalk-landing.vercel.app)
+- Custom domains added: `sandwalk.sh`, `www.sandwalk.sh`
+
+**DNS (Namecheap / registrar currently on `dns*.registrar-servers.com`):** point the domain at Vercel, e.g.
+
+```text
+A     @     76.76.21.21
+CNAME www   cname.vercel-dns.com
+```
+
+Or switch nameservers to `ns1.vercel-dns.com` / `ns2.vercel-dns.com`.
+
+If Git auto-deploy is not connected (private repo), link the GitHub integration in the Vercel project settings, or deploy with:
+
+```bash
+vercel --prod --scope fast-fold
+```
 
 No env vars required for v1.
 
