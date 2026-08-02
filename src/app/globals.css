@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  /* Sandwalk Dorado */
+  --background: #0f0c09;
+  --foreground: #f4e8d0;
+  --muted: #9a8b72;
+  --accent: #e1b34c;
+  --accent-soft: #f2d9a0;
+  --olive: #5b5c46;
+  --surface: #1a120a;
+  --surface-elevated: #241910;
+  --border: rgb(242 217 160 / 0.14);
+  --wave-line: rgb(225 179 76 / 0.28);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-olive: var(--olive);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-border: var(--border);
+  --font-sans: var(--font-figtree);
+  --font-display: var(--font-fraunces);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), ui-sans-serif, sans-serif;
+}
+
+::selection {
+  background: rgb(225 179 76 / 0.35);
+  color: #1a120a;
+}

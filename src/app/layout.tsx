@@ -1,0 +1,96 @@
+import type { Metadata } from "next";
+import { Figtree, Fraunces, Geist_Mono } from "next/font/google";
+import { SiteFooter } from "@/components/landing/site-footer";
+import { SiteHeader } from "@/components/landing/site-header";
+import "./globals.css";
+
+const figtree = Figtree({
+  variable: "--font-figtree",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const siteUrl = "https://sandwalk.sh";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Sandwalk — A thinking path for open science",
+    template: "%s · Sandwalk",
+  },
+  description:
+    "Self-hosted science agent for researchers. Ask a question, attach files, install skills, and walk the research path with CLI, web, or desktop.",
+  applicationName: "Sandwalk",
+  authors: [{ name: "Fastfold AI Labs" }],
+  keywords: [
+    "Sandwalk",
+    "science agent",
+    "open science",
+    "drug discovery",
+    "biology AI",
+    "research agent",
+  ],
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    siteName: "Sandwalk",
+    title: "Sandwalk — A thinking path for open science",
+    description:
+      "Self-hosted science agent for researchers. CLI, web dashboard, and desktop — same sessions.",
+    images: [
+      {
+        url: "/og.png",
+        width: 1640,
+        height: 1024,
+        alt: "Sandwalk dashboard",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sandwalk — A thinking path for open science",
+    description:
+      "Self-hosted science agent for researchers. CLI, web dashboard, and desktop.",
+    images: ["/og.png"],
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
+  alternates: {
+    canonical: siteUrl,
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="en"
+      className={`${figtree.variable} ${fraunces.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <body className="flex min-h-full flex-col bg-background text-foreground">
+        <SiteHeader />
+        <main className="flex-1">{children}</main>
+        <SiteFooter />
+      </body>
+    </html>
+  );
+}
