@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Figtree, Fraunces, Geist_Mono } from "next/font/google";
 import { SiteHeader } from "@/components/landing/site-header";
 import "./globals.css";
@@ -88,6 +89,7 @@ export default function RootLayout({
       <body className="h-full overflow-hidden bg-background text-foreground">
         <SiteHeader />
         <main className="h-full">{children}</main>
+        <Analytics />
       </body>
     </html>
   );
