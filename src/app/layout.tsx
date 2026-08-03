@@ -65,8 +65,11 @@ export const metadata: Metadata = {
     images: ["/og.jpg"],
   },
   icons: {
+    // Stable public/ URLs — OpenRouter scrapes via Google Favicon, which
+    // needs a clean /favicon.ico (not Next hashed app/favicon routes).
     icon: [
-      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" },
+      { url: "/icon.png", sizes: "512x512", type: "image/png" },
       { url: "/icon.svg", type: "image/svg+xml" },
     ],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],

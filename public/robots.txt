@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Favicon / brand assets must stay crawlable for Google Favicon → OpenRouter.
+Allow: /favicon.ico
+Allow: /icon.png
+Allow: /icon.svg
+Allow: /apple-touch-icon.png
