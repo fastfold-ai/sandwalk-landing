@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Figtree, Fraunces, Geist_Mono } from "next/font/google";
-import { SiteFooter } from "@/components/landing/site-footer";
 import { SiteHeader } from "@/components/landing/site-header";
 import "./globals.css";
 
@@ -26,11 +25,11 @@ const siteUrl = "https://sandwalk.sh";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Sandwalk — A thinking path for open science",
+    default: "Sandwalk — The agent harness for open science",
     template: "%s · Sandwalk",
   },
   description:
-    "Self-hosted science agent for researchers. Ask a question, attach files, install skills, and walk the research path with CLI, web, or desktop.",
+    "The agent harness for open science. Self-hosted science agent for researchers — CLI, web, and desktop.",
   applicationName: "Sandwalk",
   authors: [{ name: "Fastfold AI Labs" }],
   keywords: [
@@ -45,9 +44,9 @@ export const metadata: Metadata = {
     type: "website",
     url: siteUrl,
     siteName: "Sandwalk",
-    title: "Sandwalk — A thinking path for open science",
+    title: "Sandwalk — The agent harness for open science",
     description:
-      "Self-hosted science agent for researchers. CLI, web dashboard, and desktop — same sessions.",
+      "The agent harness for open science. CLI, web dashboard, and desktop — same sessions.",
     images: [
       {
         url: "/og.png",
@@ -59,9 +58,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sandwalk — A thinking path for open science",
+    title: "Sandwalk — The agent harness for open science",
     description:
-      "Self-hosted science agent for researchers. CLI, web dashboard, and desktop.",
+      "The agent harness for open science. CLI, web dashboard, and desktop.",
     images: ["/og.png"],
   },
   icons: {
@@ -86,10 +85,9 @@ export default function RootLayout({
       lang="en"
       className={`${figtree.variable} ${fraunces.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-background text-foreground">
+      <body className="h-full overflow-hidden bg-background text-foreground">
         <SiteHeader />
-        <main className="flex-1">{children}</main>
-        <SiteFooter />
+        <main className="h-full">{children}</main>
       </body>
     </html>
   );
