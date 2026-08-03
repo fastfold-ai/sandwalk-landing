@@ -50,9 +50,9 @@ export const metadata: Metadata = {
       "The agent harness for open science. CLI, web dashboard, and desktop — same sessions.",
     images: [
       {
-        url: "/og.png",
-        width: 1200,
-        height: 630,
+        url: "/og.jpg",
+        width: 1024,
+        height: 487,
         alt: "Sandwalk — The agent harness for open science",
       },
     ],
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "Sandwalk — The agent harness for open science",
     description:
       "The agent harness for open science. CLI, web dashboard, and desktop.",
-    images: ["/og.png"],
+    images: ["/og.jpg"],
   },
   icons: {
     icon: [
