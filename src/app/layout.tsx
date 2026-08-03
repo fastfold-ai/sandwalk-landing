@@ -51,9 +51,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/og.png",
-        width: 1640,
-        height: 1024,
-        alt: "Sandwalk dashboard",
+        width: 1200,
+        height: 630,
+        alt: "Sandwalk — The agent harness for open science",
       },
     ],
   },
