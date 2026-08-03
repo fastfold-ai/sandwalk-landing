@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s · Sandwalk",
   },
   description:
-    "The agent harness for open science. Self-hosted science agent for researchers — CLI, web, and desktop.",
+    "A local science agent with serious tools. Built for people who ship research.",
   applicationName: "Sandwalk",
   authors: [{ name: "Fastfold AI Labs" }],
   keywords: [
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     siteName: "Sandwalk",
     title: "Sandwalk — The agent harness for open science",
     description:
-      "The agent harness for open science. CLI, web dashboard, and desktop — same sessions.",
+      "A local science agent with serious tools. Built for people who ship research.",
     images: [
       {
         url: "/og.jpg",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sandwalk — The agent harness for open science",
     description:
-      "The agent harness for open science. CLI, web dashboard, and desktop.",
+      "A local science agent with serious tools. Built for people who ship research.",
     images: ["/og.jpg"],
   },
   icons: {
