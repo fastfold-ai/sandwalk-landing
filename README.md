@@ -50,6 +50,13 @@ vercel --prod --scope fast-fold
 
 No env vars required for v1.
 
+## Static downloads
+
+- PyMOL plugin zip (Plugin Manager URL install):  
+  - Latest: [`public/pymol/plugin.zip`](public/pymol/plugin.zip) → `https://sandwalk.sh/pymol/plugin.zip`  
+  - Pinned: [`public/pymol/plugin-v0.0.1.zip`](public/pymol/plugin-v0.0.1.zip) → `https://sandwalk.sh/pymol/plugin-v0.0.1.zip`  
+  Built from the sandwalk monorepo (`packaging/pymol-mcp/`) and copied here manually before deploy.
+
 ## Brand / SEO
 
 - Favicon: `public/icon.svg`
