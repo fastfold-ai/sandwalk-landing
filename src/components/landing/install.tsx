@@ -8,14 +8,20 @@ import { cn } from "@/lib/utils";
 
 const commands = [
   {
-    id: "clone",
-    label: "Source",
-    command: "git clone https://github.com/fastfold-ai/sandwalk.git && cd sandwalk && pnpm install",
+    id: "curl",
+    label: "curl",
+    command: "curl -fsSL https://sandwalk.sh/install | bash",
   },
   {
-    id: "cli",
-    label: "CLI",
-    command: "cd cli && uv sync && uv run sandwalk",
+    id: "curl-pre",
+    label: "pre-release",
+    command: "curl -fsSL https://sandwalk.sh/install | bash -s -- --pre",
+  },
+  {
+    id: "source",
+    label: "Source",
+    command:
+      "git clone https://github.com/fastfold-ai/sandwalk.git && cd sandwalk && pnpm install",
   },
   {
     id: "mac",
@@ -26,7 +32,7 @@ const commands = [
 ] as const;
 
 export function Install() {
-  const [active, setActive] = useState<(typeof commands)[number]["id"]>("clone");
+  const [active, setActive] = useState<(typeof commands)[number]["id"]>("curl");
   const [copied, setCopied] = useState(false);
   const current = commands.find((item) => item.id === active) ?? commands[0];
 
@@ -49,8 +55,9 @@ export function Install() {
             Install
           </h2>
           <p className="mt-3 max-w-2xl text-muted">
-            Clone from source, run the CLI, or package the macOS desktop app.
-            Releases also ship as DMGs on GitHub.
+            Install the Sandwalk CLI with a one-liner, or clone the monorepo for
+            the desktop app. The curl installer tracks the latest GitHub
+            Release (use pre-release while testing).
           </p>
 
           <div className="mt-8 flex flex-wrap gap-2">
@@ -88,7 +95,7 @@ export function Install() {
           </div>
 
           <p className="mt-4 text-sm text-muted">
-            Prefer a binary?{" "}
+            Desktop builds:{" "}
             <a
               href="https://github.com/fastfold-ai/sandwalk/releases"
               className="text-accent-soft underline-offset-4 hover:underline"

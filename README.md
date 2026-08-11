@@ -52,6 +52,12 @@ No env vars required for v1.
 
 ## Static downloads
 
+- CLI installer (OpenCode-style one-liner):  
+  - [`public/install`](public/install) → `https://sandwalk.sh/install`  
+  - Usage: `curl -fsSL https://sandwalk.sh/install | bash`  
+  - Source of truth: `fastfold-ai/sandwalk` → `cli/install.sh` (copy here after changing the script).  
+  - Served as `text/plain` via [`vercel.json`](vercel.json) headers.
+
 - PyMOL plugin zip (Plugin Manager URL install):  
   - Latest: [`public/pymol/plugin.zip`](public/pymol/plugin.zip) → `https://sandwalk.sh/pymol/plugin.zip`  
   - Pinned: [`public/pymol/plugin-v0.0.1.zip`](public/pymol/plugin-v0.0.1.zip) → `https://sandwalk.sh/pymol/plugin-v0.0.1.zip`  
