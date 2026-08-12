@@ -1,6 +1,6 @@
 # Sandwalk landing
 
-Marketing site for [sandwalk.sh](https://sandwalk.sh) — the Sandwalk open science agent.
+Marketing site for [sandwalk.sh](https://sandwalk.sh). Great ideas need a path. This one is yours.
 
 ## Stack
 

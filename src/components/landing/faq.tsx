@@ -7,7 +7,7 @@ import { Section } from "@/components/ui/section";
 const faqs = [
   {
     q: "What is Sandwalk?",
-    a: "A self-hosted science agent for open research — like a coding agent, but for biology and drug discovery. CLI, web dashboard, and macOS desktop share the same sessions.",
+    a: "An open, self-hosted agent harness you run and direct. Use it for hard scientific research, or for any ambitious work in any field. CLI, web dashboard, and macOS desktop share the same sessions.",
   },
   {
     q: "Do you store my data?",

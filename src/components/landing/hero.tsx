@@ -40,7 +40,11 @@ export function Hero() {
 
           <div className="max-w-sm pb-1 lg:pb-4">
             <p className="text-[1.25rem] leading-[1.3] font-medium tracking-tight text-foreground sm:text-[1.4rem]">
-              The agent harness for open science.
+              Great ideas need a path. This one is yours.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-muted sm:text-[15px]">
+              An open agent on your machine, directed by you. Hard science,
+              or anything else worth doing.
             </p>
 
             <div className="mt-8">

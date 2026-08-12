@@ -19,7 +19,7 @@ export function Showcase() {
             Chat, viewers, skills, terminal
           </h2>
           <p className="mt-3 max-w-2xl text-muted">
-            Structures, plots, and artifacts beside the conversation — the same
+            Structures, plots, and artifacts beside the conversation. The same
             session you run from the CLI.
           </p>
 

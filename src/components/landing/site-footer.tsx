@@ -22,7 +22,7 @@ export function SiteFooter() {
             <span className="font-display text-lg text-foreground">Sandwalk</span>
           </div>
           <p className="mt-2 max-w-sm text-sm text-muted">
-            A thinking path for open science.
+            Open. Directed by you.
           </p>
         </div>
         <nav className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted">

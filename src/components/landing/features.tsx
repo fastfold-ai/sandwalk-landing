@@ -6,8 +6,12 @@ import { Section } from "@/components/ui/section";
 
 const features = [
   {
-    title: "CLI ↔ web ↔ desktop",
-    body: "One agent session across terminal, dashboard, and Sandwalk.app — same workspace and history.",
+    title: "CLI ↔ Mac ↔ iOS",
+    body: "One agent session across terminal, desktop, and phone. Same workspace and history.",
+  },
+  {
+    title: "Remote sessions",
+    body: "Leave the agent running on a Mac Mini at home or a university cluster; control it from wherever you are.",
   },
   {
     title: "Skills & MCPs you can grow",
@@ -18,8 +22,8 @@ const features = [
     body: "Run on your machine by default; send heavy jobs to Modal, Lambda, or Fastfold Cloud GPUs.",
   },
   {
-    title: "Built for biology",
-    body: "Curated tools for chemistry, targets, structures, omics, clinical, and literature — plus whatever you add.",
+    title: "Serious tools, any domain",
+    body: "Ships with a deep science toolkit (chemistry, targets, structures, omics, clinical, literature) and grows with whatever you install.",
   },
   {
     title: "Plan, then build",
@@ -27,7 +31,7 @@ const features = [
   },
   {
     title: "Human-in-the-loop",
-    body: "Skill installs and sensitive actions pause for Approve / Edit / Reject — you stay in control.",
+    body: "Skill installs and sensitive actions pause for Approve / Edit / Reject. You stay in control.",
   },
 ] as const;
 
@@ -45,8 +49,8 @@ export function Features() {
             What you get
           </h2>
           <p className="mt-3 max-w-2xl text-muted">
-            An open science agent that stays on your machine, speaks research,
-            and grows with your toolkit.
+            Agents that work 24/7 on your compute or in the cloud. Open,
+            self-hosted, directed by you.
           </p>
 
           <ul className="mt-12 grid gap-x-10 gap-y-10 sm:grid-cols-2">

@@ -21,7 +21,8 @@ export function EarlyAccess() {
           </h2>
           <p className="mt-3 text-muted">
             Sandwalk is early and open source. Star the repo, open an issue, or
-            join the conversation — we are building in public for researchers.
+            join the conversation. We are building in public for people who
+            want more capable tools in their own hands.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button

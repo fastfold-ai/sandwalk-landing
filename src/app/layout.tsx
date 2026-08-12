@@ -26,46 +26,47 @@ const siteUrl = "https://sandwalk.sh";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Sandwalk — The agent harness for open science",
+    default: "Sandwalk: Great ideas need a path. This one is yours.",
     template: "%s · Sandwalk",
   },
   description:
-    "A local science agent with serious tools. Built for people who ship research.",
+    "An open agent on your machine, directed by you. For hard science, and for anything else worth doing.",
   applicationName: "Sandwalk",
   authors: [{ name: "Fastfold AI Labs" }],
   keywords: [
     "Sandwalk",
-    "science agent",
+    "agent harness",
+    "self-hosted agent",
+    "open source",
     "open science",
-    "drug discovery",
-    "biology AI",
     "research agent",
+    "personal agent",
   ],
   openGraph: {
     type: "website",
     url: siteUrl,
     siteName: "Sandwalk",
-    title: "Sandwalk — The agent harness for open science",
+    title: "Sandwalk: Great ideas need a path. This one is yours.",
     description:
-      "A local science agent with serious tools. Built for people who ship research.",
+      "An open agent on your machine, directed by you. For hard science, and for anything else worth doing.",
     images: [
       {
         url: "/og.jpg",
         width: 1200,
         height: 630,
-        alt: "Sandwalk — The agent harness for open science",
+        alt: "Sandwalk: Great ideas need a path. This one is yours.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sandwalk — The agent harness for open science",
+    title: "Sandwalk: Great ideas need a path. This one is yours.",
     description:
-      "A local science agent with serious tools. Built for people who ship research.",
+      "An open agent on your machine, directed by you. For hard science, and for anything else worth doing.",
     images: ["/og.jpg"],
   },
   icons: {
-    // Stable public/ URLs — OpenRouter scrapes via Google Favicon, which
+    // Stable public/ URLs. OpenRouter scrapes via Google Favicon, which
     // needs a clean /favicon.ico (not Next hashed app/favicon routes).
     icon: [
       { url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" },
