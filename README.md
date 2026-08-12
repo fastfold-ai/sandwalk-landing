@@ -1,6 +1,6 @@
 # Sandwalk landing
 
-Marketing site for [sandwalk.sh](https://sandwalk.sh). Great ideas need a path. This one is yours.
+Marketing site for [sandwalk.sh](https://sandwalk.sh). An agent harness for ambitious work.
 
 ## Stack
 

@@ -26,11 +26,11 @@ const siteUrl = "https://sandwalk.sh";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Sandwalk: Great ideas need a path. This one is yours.",
+    default: "Sandwalk: An agent harness for ambitious work.",
     template: "%s · Sandwalk",
   },
   description:
-    "An open agent on your machine, directed by you. For hard science, and for anything else worth doing.",
+    "An agent harness for ambitious work.",
   applicationName: "Sandwalk",
   authors: [{ name: "Fastfold AI Labs" }],
   keywords: [
@@ -46,23 +46,23 @@ export const metadata: Metadata = {
     type: "website",
     url: siteUrl,
     siteName: "Sandwalk",
-    title: "Sandwalk: Great ideas need a path. This one is yours.",
+    title: "Sandwalk: An agent harness for ambitious work.",
     description:
-      "An open agent on your machine, directed by you. For hard science, and for anything else worth doing.",
+      "An agent harness for ambitious work.",
     images: [
       {
         url: "/og.jpg",
         width: 1200,
         height: 630,
-        alt: "Sandwalk: Great ideas need a path. This one is yours.",
+        alt: "Sandwalk: An agent harness for ambitious work.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sandwalk: Great ideas need a path. This one is yours.",
+    title: "Sandwalk: An agent harness for ambitious work.",
     description:
-      "An open agent on your machine, directed by you. For hard science, and for anything else worth doing.",
+      "An agent harness for ambitious work.",
     images: ["/og.jpg"],
   },
   icons: {
