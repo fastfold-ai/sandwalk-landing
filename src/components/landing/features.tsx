@@ -14,6 +14,18 @@ const features = [
     body: "Leave the agent running on a Mac Mini at home or a university cluster; control it from wherever you are.",
   },
   {
+    title: "Benchmarking",
+    body: "Automate evals, score results, and run LLM judges. Dashboard Bench, or sandwalk eval from the CLI.",
+  },
+  {
+    title: "Split view and chats",
+    body: "Several sessions in tabs. Chat, files, and terminal side by side in one working UI.",
+  },
+  {
+    title: "Working terminal",
+    body: "A real shell next to the chat. Use Codex, Claude, OpenCode, Pi, or any other CLI you already run.",
+  },
+  {
     title: "Skills & MCPs you can grow",
     body: "Install from GitHub or skills.sh, connect remote MCPs, and create new skills with the agent.",
   },
