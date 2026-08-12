@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 847 847">
-  <rect width="847" height="847" fill="#0f0c09"/>
+  <rect width="847" height="847" rx="186" ry="186" fill="#0f0c09"/>
   <g fill="#F2D9A0" transform="translate(423.5 423.5) scale(0.76) translate(-423 -405.5)">
     <path d="M739 248c-19 0-35 16-35 35v70c0 19 16 35 35 35s35-16 35-35v-70c0-19-16-35-35-35z"/>
     <path d="M318 177c-19 0-35 16-35 35v246c0 19 16 35 35 35s35-16 35-35V212c0-19-16-35-35-35z"/>
